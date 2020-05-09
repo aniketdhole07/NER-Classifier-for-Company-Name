@@ -29,16 +29,16 @@ And the model is trained using Bidirectional LSTM Model
 #### 1)Formatting the data to BIO tagging 
 
 * The Data is in form of text sentences.We need to convert them to words and add a tag to all words.                                                                                   
-* We also have a file name [symbols.pickle](symbols.pickle) which contains the name of companies with their security name.
+* We also have a file name [symbols.pickle](symbols.pickle) which contains the name of **companies with their security name.**
 * So we read that file and whenever we find any name in main dataset of words we change the tag of that word.
 
 So to do all this we must run the command:
 
     python convert_data.py
 
-![symbols.pickle](img/sym.png)
-![](img/tex1.png)
-![](img/tex2.png)
+![symbol pickle file](img/sym.png)
+![Original Data](img/tex1.png)
+![Formatted Data](img/tex2.png)
 
 #### 2)Getting Training and Testing Data
 
