@@ -21,10 +21,24 @@ The story text found in the dataset, symbol pickle file
 Simple valid json containing two attributes security and securities. 
 
 ## Solution
-I have used Standford Word Embedding to generate Entity for [uci-news-aggregator](https://archive.ics.uci.edu/ml/datasets/News+Aggregator) Dataset.
-And the model is trained using Bidirectional LSTM Model
+I have used Spacy Word Embedding to generate Entity for [uci-news-aggregator](https://archive.ics.uci.edu/ml/datasets/News+Aggregator) Dataset.
 
-1)Main problem in NER for Company names is that Company Names sometimes contains postfix like Ltd,Inc,etc.
+1. Main problem in NER for Company names is that Company Names sometimes contains postfix like Ltd,Inc,etc.
+![](img/fuz.png)
+
+So we use a algorithm named **[Levenshtein Distance ](https://dzone.com/articles/the-levenshtein-algorithm-1)** ,WHich calculates similarity betyeen two strings.
+
+    ('Microsoft','Microsoft') = 100 %
+    ('Microsoft Corp','Microsoft') = 78 %
+    ('Microsoft Ltd,'Microsoft') = 81 %
+    
+       
+2. Find Entity in input Text:
+We do this by using spacy's pretrained entitity classifier
+
+
+### 
+    
 
 
 
