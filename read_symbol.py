@@ -2,7 +2,7 @@ import pickle
 
 def get_company_name():
 	company_name=[]
-	file = open('package/symbols.pickle', 'rb')
+	file = open('package/symbols.pickle', 'rb')  #read company names from pickle
 	data = pickle.load(file)
 	file.close()
 	for i in data['company']:
@@ -11,7 +11,7 @@ def get_company_name():
 	return company_name
 
 def get_company_security():
-	file = open('package/symbols.pickle', 'rb')
+	file = open('package/symbols.pickle', 'rb')  #read company names from pickle
 	data = pickle.load(file)
 	file.close()
 	security=[]
