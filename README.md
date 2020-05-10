@@ -36,8 +36,36 @@ So we use a algorithm named **[Levenshtein Distance ](https://dzone.com/articles
 2. Find Entity in input Text:
 We do this by using spacy's pretrained entitity classifier
 
+3. Then we do simple comparison of entitity and company name in symbols.pickle file
 
-### 
+### Instructions
+
+1. Fork the repo
+2. Clone the repo
+3. Run the .sh file to install required libraries
+4. Change the string named **sentence** in [get_input.py](get_input.py)
+
+
+       sentence=" "  
+    
+to 
+
+    #example
+    sentence="Apple, Amazon and Microsoft are reporting earnings after market close on April 30th."
+
+5. run the get_input.py file
+
+6. Output will be:
+
+       {"security": "AAPL", "securities": ["AAPL", "MSFT"]}
+       
+As there is no 'Amazon' in the output because it was not present in the symbols.pickle       
+
+
+
+
+
+
     
 
 
