@@ -24,7 +24,7 @@ Simple valid json containing two attributes security and securities.
 I have used Spacy Word Embedding to generate Entity for [uci-news-aggregator](https://archive.ics.uci.edu/ml/datasets/News+Aggregator) Dataset.
 
 1. Main problem in NER for Company names is that Company Names sometimes contains postfix like Ltd,Inc,etc.
-![](img/fuz.png)
+![](img/m.png)
 
 So we use a algorithm named **[Levenshtein Distance ](https://dzone.com/articles/the-levenshtein-algorithm-1)** ,WHich calculates similarity betyeen two strings.
 
