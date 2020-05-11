@@ -58,9 +58,9 @@ to
 
 6. Output will be:
 
-       {"security": "AAPL", "securities": ["AAPL", "MSFT"]}
+       {"security": "AAPL", "securities": ["AAPL","AMZN","MSFT"]}
        
-**Note:** As there is no **Amazon** in the output because it was not present in **the symbols.pickle**       
+       
 
 
 
